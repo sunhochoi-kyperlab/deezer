@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+    <meta charset="UTF-8">
+		<title>Common</title>
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+	</head>
+	<body>
+		<div id="container" class="loading">
+            <div class="pop loading">
+                <div class="loader">
+                    <div class="spinner"></div>
+                    <p class="text">Loading...</p>
+                </div>
+            </div>
+            <div class="pop btn">
+                <div class="pop-up">
+                    <div class="pop-con">
+                        <div class="pop-tittle">
+                            [Title]
+                        </div>
+                        <div class="pop-textarea">
+                            [Message body]<br>[Message body]
+                        </div>
+                    </div>
+                    <div class="pop-btnarea">
+                        <button class="pop-btn">Button</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pop btn-2">
+                <div class="pop-up">
+                    <div class="pop-con">
+                        <div class="pop-tittle">
+                            [Title]
+                        </div>
+                        <div class="pop-textarea">
+                            [Message body]<br>[Message body]
+                        </div>
+                    </div>
+                    <div class="pop-btnarea dual">
+                        <button class="pop-btn">Button 1</button>
+                        <button class="pop-btn">Button 2</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pop no-btn">
+                <div class="pop-up">
+                    <div class="pop-con">
+                        <div class="pop-tittle">
+                            [Title]
+                        </div>
+                        <div class="pop-textarea full">
+                            [Message body]<br>[Message body]<br>[Message body]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="temp-menu">
+            <a> Loading</a>
+            <a> 1-BTN Pop</a>
+            <a> 2-BTN Pop</a>
+            <a> No BTN Pop</a>
+        </div>
+        <style>
+            .temp-menu{z-index:1000;position:fixed;top:0;right:0;border-left:1px solid #ccc;}
+            .temp-menu a{display:block;padding:10px 30px;background:#FFF;font-size:14px;color:#000;border-bottom:1px solid #ccc;cursor:pointer;}
+        </style>
+	</body>
+  <script>
+    document.querySelector(".temp-menu a:first-child").addEventListener("click",function(){
+      document.querySelector("#container").className = "loading";
+    });
+    document.querySelector(".temp-menu a:nth-child(2)").addEventListener("click",function(){
+      document.querySelector("#container").className = "btn";
+    });
+    document.querySelector(".temp-menu a:nth-child(3)").addEventListener("click",function(){
+      document.querySelector("#container").className = "btn-2";
+    });
+    document.querySelector(".temp-menu a:nth-child(4)").addEventListener("click",function(){
+      document.querySelector("#container").className = "no-btn";
+    });
+  </script>
+</html>

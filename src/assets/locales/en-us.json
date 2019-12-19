@@ -1,0 +1,16 @@
+{
+  "POPUP_TITLE_ERROR": "ERROR",
+  "POPUP_TITLE_NO_NETWORK": "NO NETWORK",
+  "POPUP_TITLE_LOGOUT": "LOGOUT",
+  "POPUP_TITLE_TRACK_ERROR": "TRACK ERROR",
+  "POPUP_TITLE_NETWORK_ERROR_TRY_THREE_TIME": "RETRY FAILED",
+  "POPUP_CONTENT_NO_NETWORK": "Network Unavailable \nWould you like to retry?",
+  "POPUP_CONTENT_UNEXPECTED_ERROR": "Unexpected error occurred.\nPlease restart the application.",
+  "POPUP_CONTENT_NETWORK_ERROR_TRY_THREE_TIME": "You have exceeded 3 attempts.\nPlease restart the application.",
+  "POPUP_CONTENT_ALL_TRACK_ERROR": "All tracks not available.\nHow about try Flow?",
+  "POPUP_CONTENT_LOGOUT": "Are you sure you want to log out?",
+  "POPUP_CONTENT_TRACK_ERROR": "Current track not available.\nPlaying next available track.",
+  "POPUP_BUTTON_TRY_FLOW": "Try Flow",
+  "POPUP_BUTTON_RETRY": "Retry"
+
+}
